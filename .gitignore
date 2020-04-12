@@ -3,4 +3,5 @@
 .idea
 
 *$py.class
-
+report
+.pytest_cache
