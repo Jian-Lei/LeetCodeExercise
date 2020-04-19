@@ -10,6 +10,7 @@ import allure
 from example.exercise_1 import *
 from example.exercise_2 import *
 from example.exercise_3 import *
+from example.exercise_4 import *
 
 
 @allure.feature("测试练习题")
@@ -64,6 +65,17 @@ class TestExerciseOne(object):
         assert 9 == result_4
         assert 1 == result_5
         assert 3 == result_6
+
+    @allure.story("测试练习题4")
+    def test_exercise_4(self):
+        """
+        测试练习题3
+        :return:
+        """
+        list_1 = [-3, -6]
+        list_2 = [4, 5, 7]
+        result = median_of_two_sorted_arrays(list_1, list_2)
+        assert 4.0 == result
 
 
 if __name__ == "__main__":
